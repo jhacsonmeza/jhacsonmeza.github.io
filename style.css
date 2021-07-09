@@ -1,0 +1,122 @@
+p, li {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 2em auto;
+}
+
+
+/* ------------------ Header ------------------ */
+header {
+    margin: auto;
+    align-items: center;
+    width: 50%;
+    margin-top: 4%;
+    margin-bottom:5%;
+}
+
+header p {
+    margin-bottom:-4%;
+}
+
+.title {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+
+.social-media {
+    text-align: center;
+    margin: 5%;
+    font-size: 30px;
+}
+
+.social-media a {
+    color: black;
+}
+
+.email {
+    text-align: center;
+    margin: 5%;
+    margin-bottom:-4%;
+    font-size: 17px;
+}
+
+.email a {
+    color: black;
+}
+
+.email a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #367abe;
+}
+
+
+
+/* ------------------ Publications ------------------ */
+.name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.paper-section {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:4%;
+}
+
+.paper-fig {
+    width: 35%;
+}
+
+.paper-fig img {
+    display:flex;
+    margin:auto;
+}
+
+.right-side {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.paper-title p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* ------------------ Open Source Code ------------------ */
+.code-items {
+    margin: auto;
+    width: 80%;
+    margin-bottom:4%;
+}
+
+/* .code-items a {
+    text-decoration: none;
+} */
+
+/*.code-items a:hover {
+    color: #383;
+    text-decoration: underline;
+} */
