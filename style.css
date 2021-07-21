@@ -155,6 +155,7 @@ a:hover {
     .paper-fig img {
         display: flex;
         margin: auto auto 0.5em;
+        width: 100%;
     }
     
     .right-side {
