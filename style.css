@@ -105,7 +105,7 @@ a:hover {
     width: 40%;
 }
 
-.paper-fig img {
+.paper-fig img, video {
     display: flex;
     margin: auto;
 }
@@ -152,7 +152,7 @@ a:hover {
         width: 95%;
     }
     
-    .paper-fig img {
+    .paper-fig img, video {
         display: flex;
         margin: auto auto 0.5em;
         width: 100%;
