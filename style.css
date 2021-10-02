@@ -1,3 +1,7 @@
+:root {
+    --link-color: #00acc1;
+}
+
 p, a, li {
     font-family: 'Lato', sans-serif;
     color: rgb(95, 95, 95);
@@ -5,7 +9,7 @@ p, a, li {
 
 a {
     text-decoration: none;
-    color: #0000EE;
+    color: var(--link-color);
 }
 
 hr {
@@ -65,6 +69,10 @@ header p {
 
 .social-media a {
     color: rgb(95, 95, 95);
+}
+
+.social-media a:hover {
+    color: var(--link-color);
 }
 
 .email {
@@ -140,8 +148,8 @@ a:hover {
 .paper-links a:hover {
     text-decoration: none;
     transition: color .5s;
-    color: #367abe;
-    border-color: #367abe;
+    color: var(--link-color);
+    border-color: var(--link-color);
 }
 
 
