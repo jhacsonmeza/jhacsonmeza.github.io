@@ -26,9 +26,8 @@ hr {
     font-family: 'Lato', sans-serif;
     font-size: 28px;
     color: var(--text-color);
-    margin: auto;
+    margin: 0 auto 0.8em;
     width: 80%;
-    margin-bottom: 0.8em;
 }
 
 @media screen and (max-width: 480px) {
@@ -44,11 +43,9 @@ hr {
 
 /* ------------------ Header ------------------ */
 header {
-    margin: auto;
+    margin: 4% auto 0;
     align-items: center;
     width: 50%;
-    margin-top: 4%;
-    margin-bottom: 5%;
 }
 
 .name {
@@ -58,31 +55,24 @@ header {
     color: var(--text-color);
 }
 
-header p {
-    margin-bottom: -2%;
+.email {
+    text-align: center;
+    margin: 3% auto -4%;
 }
-
 
 .social-media {
     text-align: center;
-    margin: 5%;
+    margin: 5% auto 0;
 }
 
 .social-media a {
     color: var(--text-color);
     font-size: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
 }
 
 .social-media a:hover {
     color: var(--link-color);
-}
-
-.email {
-    text-align: center;
-    margin: 5%;
-    margin-bottom: -4%;
 }
 
 a:hover {
@@ -100,12 +90,11 @@ a:hover {
 
 /* ------------------ Publications ------------------ */
 .paper-section {
-    margin: auto;
+    margin: 0 auto 4%;
     width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 4%;
 }
 
 .paper-fig {
@@ -127,7 +116,7 @@ a:hover {
 }
 
 .paper-links {
-    margin-top: 1em;
+    margin: 1em 0 0;
 }
 
 .paper-links a {
@@ -152,7 +141,7 @@ a:hover {
     .paper-section {
         width: 95%;
         flex-direction: column;
-        margin-bottom: 20%;
+        margin: 0 auto 20%;
     }
 
     .paper-fig {
@@ -175,9 +164,8 @@ a:hover {
 
 /* ------------------ Open Source Code ------------------ */
 .code-items {
-    margin: auto;
     width: 80%;
-    margin-bottom: 4%;
+    margin: 0 auto 4%;
 }
 
 @media screen and (max-width: 480px) {
