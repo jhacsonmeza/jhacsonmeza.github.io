@@ -6,6 +6,7 @@
 p, a, li {
     font-family: 'Lato', sans-serif;
     color: var(--text-color);
+    font-size: 16px;
 }
 
 a {
@@ -65,11 +66,13 @@ header p {
 .social-media {
     text-align: center;
     margin: 5%;
-    font-size: 30px;
 }
 
 .social-media a {
     color: var(--text-color);
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .social-media a:hover {
@@ -80,7 +83,6 @@ header p {
     text-align: center;
     margin: 5%;
     margin-bottom: -4%;
-    font-size: 17px;
 }
 
 a:hover {
