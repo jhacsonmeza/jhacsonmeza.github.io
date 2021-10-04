@@ -77,6 +77,7 @@ header {
 }
 
 a:hover {
+    transition: color .5s;
     text-decoration: underline;
     color: #367abe;
 }
@@ -132,7 +133,6 @@ a:hover {
 
 .paper-links a:hover {
     text-decoration: none;
-    transition: color .5s;
     color: var(--link-color);
     border-color: var(--link-color);
 }
