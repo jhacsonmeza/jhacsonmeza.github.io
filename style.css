@@ -31,6 +31,10 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+    p, a, li {
+        font-weight: 300;
+    }
+    
     hr {
         width: 100%;
     }
