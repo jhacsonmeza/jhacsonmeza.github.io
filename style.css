@@ -1,5 +1,6 @@
 :root {
     --link-color: #00acc1;
+    /* --link-color: #00bcd4; */
     --text-color: rgb(95, 95, 95);
 }
 
@@ -12,6 +13,7 @@ p, a, li {
 a {
     text-decoration: none;
     color: var(--link-color);
+    border-bottom: 1px dotted var(--link-color);
 }
 
 hr {
@@ -72,18 +74,20 @@ header {
 
 .social-media a {
     color: var(--text-color);
+    border-bottom: none;
     font-size: 30px;
     margin: 0 5px;
 }
 
 .social-media a:hover {
     color: var(--link-color);
+    border-bottom: none;
 }
 
 a:hover {
     transition: color .5s;
-    text-decoration: underline;
-    color: #367abe;
+    border-bottom: 1px dotted transparent;
+    color: #00838f;
 }
 
 @media screen and (max-width: 480px) {
