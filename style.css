@@ -1,6 +1,5 @@
 :root {
     --link-color: #00acc1;
-    /* --link-color: #00bcd4; */
     --text-color: rgb(95, 95, 95);
 }
 
@@ -14,6 +13,7 @@ a {
     text-decoration: none;
     color: var(--link-color);
     border-bottom: 1px dotted var(--link-color);
+    transition: color .5s, border-bottom .5s;
 }
 
 hr {
@@ -85,7 +85,7 @@ header {
 }
 
 a:hover {
-    transition: color .5s;
+    transition: color .5s, border-bottom .5s;
     border-bottom: 1px dotted transparent;
     color: #00838f;
 }
