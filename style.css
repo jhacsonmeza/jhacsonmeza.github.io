@@ -7,6 +7,7 @@ p, a, li {
     font-family: 'Lato', sans-serif;
     color: var(--text-color);
     font-size: 16px;
+    margin: 0;
 }
 
 a {
@@ -60,6 +61,10 @@ header {
     font-weight: 200;
     text-align: center;
     color: rgb(95, 95, 95);
+}
+
+.bio {
+    margin: 1em 0 0 0;
 }
 
 .email {
@@ -123,11 +128,6 @@ a:hover {
 
 .right-side {
     width: 50%;
-}
-
-.paper-title p {
-    margin: 0;
-    padding: 0;
 }
 
 .paper-links {
