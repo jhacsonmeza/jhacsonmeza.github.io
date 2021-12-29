@@ -105,16 +105,16 @@ a:hover {
 
 /* ------------------ Publications ------------------ */
 .paper-section {
-    margin: 0 auto 2em;
     width: 80%;
-
+    margin: 0 auto 1.5em;
+    padding: 1.25rem 0;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .6rem;
-    padding: 1.25rem 0;
+    box-shadow: 1px 0 4px rgba(0,2,4,.065),0 7px 18px rgba(1,1,1,.06);
+    border-radius: 15px;
 }
 
 .paper-fig {
