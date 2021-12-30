@@ -4,7 +4,7 @@
 }
 
 p, a, li {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 16px;
     margin: 0;
@@ -25,17 +25,17 @@ hr {
 }
 
 .title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 28px;
     color: var(--text-color);
     margin: 0 auto 0.8em;
     width: 80%;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 480px) {
     p, a, li {
-        font-weight: 300;
+        font-weight: 200;
     }
     
     hr {
@@ -108,7 +108,7 @@ a:hover {
     width: 80%;
     margin: 0 auto 1.5em;
     padding: 1.25rem 0;
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
