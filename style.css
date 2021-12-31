@@ -3,6 +3,11 @@
     --text-color: rgb(130, 130, 130);
 }
 
+body {
+    width: 70%;
+    margin: auto;
+}
+
 p, a, li {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
@@ -18,7 +23,6 @@ a {
 }
 
 hr {
-    width: 80%;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 2em auto;
@@ -29,7 +33,6 @@ hr {
     font-size: 28px;
     color: var(--text-color);
     margin: 0 auto 0.8em;
-    width: 80%;
     font-weight: 700;
 }
 
@@ -38,12 +41,8 @@ hr {
         font-weight: 200;
     }
     
-    hr {
-        width: 95%;
-    }
-
-    .title {
-        width: 95%;
+    body {
+        width: 92%;
     }
 }
 
@@ -51,8 +50,7 @@ hr {
 /* ------------------ Header ------------------ */
 header {
     margin: 3% auto 0;
-    align-items: center;
-    width: 50%;
+    width: 70%;
 }
 
 .name {
@@ -97,7 +95,7 @@ a:hover {
 
 @media screen and (max-width: 480px) {
     header {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -105,7 +103,6 @@ a:hover {
 
 /* ------------------ Publications ------------------ */
 .paper-section {
-    width: 80%;
     margin: 0 auto 1.5em;
     padding: 1.25rem 0;
 
@@ -153,7 +150,6 @@ a:hover {
 
 @media screen and (max-width: 480px) {
     .paper-section {
-        width: 95%;
         flex-direction: column;
     }
 
@@ -177,12 +173,5 @@ a:hover {
 
 /* ------------------ Open Source Code ------------------ */
 .code-items {
-    width: 80%;
     margin: 0 auto 4%;
-}
-
-@media screen and (max-width: 480px) {
-    .code-items {
-        width: 95%;
-    }
 }
