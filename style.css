@@ -8,6 +8,13 @@ body {
     margin: auto;
 }
 
+svg {
+    display: inline-block;
+    vertical-align: -.125em;
+    width: 1em;
+    height: 1em;
+}
+
 p, a, li {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
@@ -18,7 +25,7 @@ p, a, li {
 a {
     text-decoration: none;
     color: var(--link-color);
-    border-bottom: 1px dotted var(--link-color);
+    border-bottom: 1px dotted;
     transition: color .5s, border-bottom .5s;
 }
 
