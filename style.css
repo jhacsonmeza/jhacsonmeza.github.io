@@ -8,18 +8,16 @@ body {
     margin: auto;
 }
 
-svg {
-    display: inline-block;
-    vertical-align: -.125em;
-    width: 1em;
-    height: 1em;
-}
-
 p, a, li {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
+    font-weight: 300;
     font-size: 16px;
     margin: 0;
+}
+
+b {
+    font-weight: 700;
 }
 
 a {
@@ -35,12 +33,19 @@ hr {
     margin: 2em auto;
 }
 
+svg {
+    display: inline-block;
+    vertical-align: -.125em;
+    width: 1em;
+    height: 1em;
+}
+
 .title {
     font-family: 'Nunito', sans-serif;
     font-size: 28px;
     color: var(--text-color);
     margin: 0 auto 0.8em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 1000px) {
