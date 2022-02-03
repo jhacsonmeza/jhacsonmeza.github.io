@@ -27,6 +27,12 @@ a {
     transition: color .5s, border-bottom .5s;
 }
 
+a:hover {
+    border-bottom: 1px dotted transparent;
+    color: #00838f;
+    transition: color .5s, border-bottom .5s;
+}
+
 hr {
     border: 0;
     border-top: 1px solid #ccc;
@@ -98,17 +104,13 @@ header {
     border-bottom: none;
     font-size: 30px;
     margin: 0 5px;
+    transition: color .5s;
 }
 
 .social-media a:hover {
     color: var(--link-color);
     border-bottom: none;
-}
-
-a:hover {
-    transition: color .5s, border-bottom .5s;
-    border-bottom: 1px dotted transparent;
-    color: #00838f;
+    transition: color .5s;
 }
 
 @media screen and (max-width: 480px) {
