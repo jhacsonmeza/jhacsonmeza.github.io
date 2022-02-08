@@ -152,26 +152,30 @@ header {
 }
 
 .paper-links a {
+    /* color: #8a8fa0; */
     color: var(--text-color);
 
     border-style: solid;
-    border-color: rgb(220,220,220);
+    border-color: rgb(235,235,235);
     border-width: 2px;
     border-radius: 100px;
-    background-color: rgb(242,242,242);
+    background-color: rgb(235,235,235);
+    /* background-color: rgba(248,249,250,1); */
 
     display: inline-block;
     padding: 3px 10px 2px 10px;
     margin: 0.5em 0 0;
+    /* white-space: nowrap; */
 
-    transition: color .5s, border-color .5s;
+    transition: color .5s, border-color .5s, background-color .5s;
 }
 
 .paper-links a:hover {
     text-decoration: none;
     color: var(--link-color);
     border-color: var(--link-color);
-    transition: color .5s, border-color .5s;
+    background-color: rgb(245,245,245);
+    transition: color .5s, border-color .5s, background-color .5s;
 }
 
 
