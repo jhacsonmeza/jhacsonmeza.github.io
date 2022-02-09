@@ -10,6 +10,11 @@
     <link href="style.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Nunito:200,300,700,800|Work+Sans:200,700" rel="stylesheet">
 
+    <script type="module" src="js/medium-zoom.js"></script>
+    <script type="module">
+        mediumZoom(document.querySelectorAll('.zoom-fig'))
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5ERH3PWTB"></script>
     <script>
@@ -72,9 +77,7 @@
 
         <div class="paper-section">
             <div class="paper-fig">
-                <video autoplay loop muted playsinline width=100%>
-                    <source src="figures/robot.mp4" type="video/mp4">
-                </video>
+                <video class="zoom-fig" id="vide" src="figures/robot.mp4" autoplay loop muted playsinline width=100%></video>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -114,9 +117,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <video autoplay loop muted playsinline width=80%>
-                    <source src="figures/navig.mp4" type="video/mp4">
-                </video>
+                <video class="zoom-fig" src="figures/navig.mp4" autoplay loop muted playsinline width=80%></video>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -154,7 +155,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <img src="figures/triang_plot.png" width=95%>
+                <img class="zoom-fig" src="figures/triang_plot.png" width=95%>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -182,7 +183,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <img src="figures/arm_simu.png" width=100%>
+                <img class="zoom-fig" src="figures/arm_simu.png" width=100%>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -210,7 +211,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <img src="figures/SPUD.png" width=80%>
+                <img class="zoom-fig" src="figures/SPUD.png" width=80%>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -244,7 +245,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <img src="figures/US_FPP.png" width=100%>
+                <img class="zoom-fig" src="figures/US_FPP.png" width=100%>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -272,9 +273,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <video autoplay loop muted playsinline width=100%>
-                    <source src="figures/DSM_DTM.mp4" type="video/mp4">
-                </video>
+                <video class="zoom-fig" src="figures/DSM_DTM.mp4" autoplay loop muted playsinline width=100%></video>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -302,7 +301,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <img src="figures/dict_learning.png" width=100%>
+                <img class="zoom-fig" src="figures/dict_learning.png" width=100%>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -331,9 +330,7 @@
     
         <div class="paper-section">
             <div class="paper-fig">
-                <video autoplay loop muted playsinline width=100%>
-                    <source src="figures/SfM.mp4" type="video/mp4">
-                </video>
+                <video class="zoom-fig" src="figures/SfM.mp4" autoplay loop muted playsinline width=100%></video>
             </div>
             <div class="right-side">
                 <div class="paper-title">
@@ -373,9 +370,7 @@
 
         <div class="paper-section">
             <div class="paper-fig">
-                <video autoplay loop muted playsinline width=90%>
-                    <source src="figures/navig_acq.mp4" type="video/mp4">
-                </video>
+                <video class="zoom-fig" src="figures/navig_acq.mp4" autoplay loop muted playsinline width=90%></video>
             </div>
             <div class="right-side">
                 <div class="paper-title">

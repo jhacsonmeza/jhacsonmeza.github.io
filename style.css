@@ -130,6 +130,12 @@ header {
 
 .paper-fig {
     width: 40%;
+    transition: opacity .5s;
+}
+
+.paper-fig:hover {
+    opacity: 0.5;
+    transition: opacity .5s;
 }
 
 .paper-fig img, video {
@@ -152,7 +158,6 @@ header {
 }
 
 .paper-links a {
-    /* color: #8a8fa0; */
     color: var(--text-color);
 
     border-style: solid;
@@ -160,12 +165,10 @@ header {
     border-width: 2px;
     border-radius: 100px;
     background-color: rgb(235,235,235);
-    /* background-color: rgba(248,249,250,1); */
 
     display: inline-block;
     padding: 3px 10px 2px 10px;
     margin: 0.5em 0 0;
-    /* white-space: nowrap; */
 
     transition: color .5s, border-color .5s, background-color .5s;
 }
