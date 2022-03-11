@@ -1,5 +1,5 @@
 :root {
-    --link-color: #00acc1;
+    --link-color: #00bcd4;
     --text-color: rgb(130, 130, 130);
 }
 
@@ -29,7 +29,7 @@ a {
 
 a:hover {
     border-bottom: 1px dotted transparent;
-    color: #00838f;
+    color: #0097a7;
     transition: color .5s, border-bottom .5s;
 }
 
@@ -152,7 +152,7 @@ header {
 }
 
 .highlight-red {
-    color: #c7254e;
+    color: #e74d73;
     background-color: #f9f2f4;
     border-radius: 4px;
     padding: 0 2px 0;
@@ -163,13 +163,13 @@ header {
 }
 
 .paper-links a {
-    color: var(--text-color);
+    color: var(--link-color);
 
     border-style: solid;
-    border-color: rgb(235,235,235);
-    border-width: 2px;
+    border-color: #e5f3fa;
+    border-width: 1px;
     border-radius: 100px;
-    background-color: rgb(235,235,235);
+    background-color: #ebf8ff;
 
     display: inline-block;
     padding: 2px 10px 1px 10px;
@@ -180,9 +180,9 @@ header {
 
 .paper-links a:hover {
     text-decoration: none;
-    color: var(--link-color);
-    border-color: var(--link-color);
-    background-color: rgb(245,245,245);
+    color: #00838f;
+    border-color: #00838f;
+    background-color: #f0f9ff;
     transition: color .5s, border-color .5s, background-color .5s;
 }
 
