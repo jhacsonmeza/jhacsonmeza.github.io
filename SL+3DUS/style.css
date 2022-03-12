@@ -1,6 +1,7 @@
 :root {
     --link-color: #00acc1;
-    --text-color: rgb(130, 130, 130);
+    --text-color: rgb(60,60,60);
+    --title-color: rgb(80, 80, 80);
 }
 
 body {
@@ -12,6 +13,8 @@ p, a, li {
     font-family: 'Avenir LT Std', sans-serif;
     font-size: 1em;
     margin: 0;
+    font-weight: 300;
+    color: var(--text-color);
 }
 
 a {
@@ -28,6 +31,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     margin: 0 0 0.5em 0;
+    color: var(--title-color);
 }
 
 svg {
@@ -51,7 +55,11 @@ svg {
     font-weight: 700;
     
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: 1.2em;
+    /* color: #8a8fa0; */
+    color: var(--title-color);
+    /* background-color: #bae9c7; */
+    /* background-color: #cff0f2; */
 }
 
 .authors {
@@ -84,6 +92,7 @@ svg {
     margin: 1em 2em;
     font-size: 1rem;
     transition: color .5s;
+    color: var(--title-color);
 }
 
 .paper-links a:hover {
@@ -91,7 +100,7 @@ svg {
     transition: color .5s;
 }
 
-.paper-links i, svg {
+.paper-links svg {
     font-size: 2.5rem;
     margin-bottom: 5px;
 }
@@ -143,6 +152,8 @@ figcaption {
     font-size: 1em;
     text-align: justify;
     margin-top: 0.5em;
+    font-weight: 300;
+    color: var(--text-color);
 }
 
 #c {
@@ -164,6 +175,11 @@ figcaption {
 .viz3d {
     margin: 1em auto 0;
     height: 480px;
+    cursor: grab;
+}
+
+.viz3d:active {
+    cursor: grabbing;
 }
 
 
@@ -172,7 +188,7 @@ figcaption {
         width: 100%;
     }
 
-    img {
+    img, video {
         width: 100% !important;
     }
 
