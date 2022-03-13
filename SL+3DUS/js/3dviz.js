@@ -29,6 +29,7 @@ const loader1 = new PLYLoader(manager);
 loader1.load( 'data/phantom.ply', function ( geometry ) {
     const material = new THREE.PointsMaterial( {size: 0.01, vertexColors: true, transparent: true, opacity: 0.1} );
     const pc = new THREE.Points( geometry, material );
+    pha_scene.userData.ext = pc;
 
     pc.rotateOnWorldAxis(new THREE.Vector3(1, 0, 0), THREE.Math.degToRad(90));
     pc.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), THREE.Math.degToRad(90));
@@ -44,6 +45,7 @@ const loader2 = new PLYLoader(manager);
 loader2.load( 'data/tumors.ply', function ( geometry ) {
     const material = new THREE.PointsMaterial( {size: 0.008, vertexColors: true} );
     const pc = new THREE.Points( geometry, material );
+    pha_scene.userData.int = pc;
 
     pc.rotateOnWorldAxis(new THREE.Vector3(1, 0, 0), THREE.Math.degToRad(90));
     pc.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), THREE.Math.degToRad(90));
@@ -69,22 +71,22 @@ const pha_panel = new GUI();
 document.getElementById( 'pantom-cont' ).appendChild( pha_panel.domElement );
 pha_panel.domElement.style = 'position:absolute';
 
-pha_panel.add( {'stop animation': false}, 'stop animation' ).onChange(function ( rot ) {
-    pha_controls.autoRotate = !rot;
+pha_panel.add( {'rotate': true}, 'rotate' ).onChange(function ( rot ) {
+    pha_controls.autoRotate = rot;
 } );
 
 const folder1p = pha_panel.addFolder('External surface');
 const folder2p = pha_panel.addFolder('Internal tumors');
 
 folder1p.add( {'show phantom': true}, 'show phantom' ).onChange(function ( visibility ) {
-    pha_group.children[1].visible = visibility;
+    pha_scene.userData.ext.visible = visibility;
 } );
 folder1p.add( {'opacity': 0.1}, 'opacity', 0.1, 1, 0.1 ).onChange( function ( o ) {
-    pha_group.children[1].material.opacity = o;
+    pha_scene.userData.ext.material.opacity = o;
 } );
 
 folder2p.add( {'show tumors': true}, 'show tumors' ).onChange(function ( visibility ) {
-    pha_group.children[0].visible = visibility;
+    pha_scene.userData.int.visible = visibility;
 } );
 
 pha_panel.open();
@@ -107,6 +109,7 @@ const loader3 = new PLYLoader(manager);
 loader3.load( 'data/cylin_ext.ply', function ( geometry ) {
     const material = new THREE.PointsMaterial( {size: 0.01, vertexColors: true, transparent: true, opacity: 0.1} );
     const pc = new THREE.Points( geometry, material );
+    cyl_scene.userData.ext = pc;
 
     pc.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), THREE.Math.degToRad(17));
     pc.rotateOnWorldAxis(new THREE.Vector3(1, 0, 0), THREE.Math.degToRad(90));
@@ -121,6 +124,7 @@ const loader4 = new PLYLoader(manager);
 loader4.load( 'data/cylin_int.ply', function ( geometry ) {
     const material = new THREE.PointsMaterial( {size: 0.008, vertexColors: true} );
     const pc = new THREE.Points( geometry, material );
+    cyl_scene.userData.int = pc;
 
     pc.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), THREE.Math.degToRad(17));
     pc.rotateOnWorldAxis(new THREE.Vector3(1, 0, 0), THREE.Math.degToRad(90));
@@ -144,22 +148,22 @@ const cyl_panel = new GUI();
 document.getElementById( 'cylinders-cont' ).appendChild( cyl_panel.domElement );
 cyl_panel.domElement.style = 'position:absolute';
 
-cyl_panel.add( {'stop animation': false}, 'stop animation' ).onChange(function ( rot ) {
-    cyl_controls.autoRotate = !rot;
+cyl_panel.add( {'rotate': true}, 'rotate' ).onChange(function ( rot ) {
+    cyl_controls.autoRotate = rot;
 } );
 
 const folder1c = cyl_panel.addFolder('External surface');
 const folder2c = cyl_panel.addFolder('Internal structure');
 
 folder1c.add( {'show outer cylinder': true}, 'show outer cylinder' ).onChange(function ( visibility ) {
-    cyl_group.children[0].visible = visibility;
+    cyl_scene.userData.ext.visible = visibility;
 } );
 folder1c.add( {'opacity': 0.1}, 'opacity', 0.1, 1, 0.1 ).onChange( function ( o ) {
-    cyl_group.children[0].material.opacity = o;
+    cyl_scene.userData.ext.material.opacity = o;
 } );
 
 folder2c.add( {'show inner cylinder': true}, 'show inner cylinder' ).onChange(function ( visibility ) {
-    cyl_group.children[1].visible = visibility;
+    cyl_scene.userData.int.visible = visibility;
 } );
 
 cyl_panel.open();
