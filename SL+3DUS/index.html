@@ -129,7 +129,7 @@
         </figure>
 
         <p>
-            The acquisition process for external and internal reconstruction is shown in the video below:
+            The acquisition process for external and internal reconstruction is shown below:
         </p>
 
         <figure>
@@ -188,6 +188,57 @@
         <div id="cylinders-cont" class="cont3d">
             <div id="cylinders" class="viz3d"></div>
         </div>
+    </div>
+
+
+
+    <div class="section">
+        <h1>
+            Potential Applications: Navigation System
+        </h1>
+
+        <p>
+            As we can obtain the pose of the marker in real-time, we can use this for medical navigation by displaying the ultrasound images and the 3D model of a transducer in a 3D real-time visualizer.
+        </p>
+
+        <figure>
+            <video src="figures/navigation.mp4" controls loop muted playsinline width=80%></video>
+            <figcaption><b>Video 4.</b> Multimodal technique as a navigation system.</figcaption>
+        </figure>
+
+        <p>
+            For navigation purposes, we developed a real-time visualization software using OpenCV 3D Visualizer, where we merge MarkerPose with the stereo visualization of the cameras.
+        </p>
+
+        <figure>
+            <video src="../figures/navig_acq.mp4" controls loop muted playsinline width=100%></video>
+            <figcaption><b>Video 5.</b> Example of the navigation visualization system.</figcaption>
+        </figure>
+    </div>
+
+
+    <div class="section">
+        <h1>
+            Potential Applications: Projection-based Guidance
+        </h1>
+
+        <p>
+            In addition to using the projector for fringe projection, we can exploit it to point out the location of the tumors.
+        </p>
+
+        <figure>
+            <img class="zoom-fig" src="figures/proj1.png" alt="concentric cylinders model" style="width: 50%;">
+            <figcaption><b>Figure 6.</b> Using the projector to highlight the location of the tumors.</figcaption>
+        </figure>
+
+        <p>
+            We can also project the reconstructed tumors with the ultrasound slices onto the phantom surface including their texture. This as a first step towards projection-based augmented reality guidance. Note that the projected tumors are in agreement with the actual position and texture of the tumors.
+        </p>
+
+        <figure>
+            <img class="zoom-fig" src="figures/proj2.png" alt="concentric cylinders model" style="width: 100%;">
+            <figcaption><b>Figure 7.</b> Towards projection-based augmented reality applications.</figcaption>
+        </figure>
     </div>
 
 
