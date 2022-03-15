@@ -69,7 +69,7 @@ pha_controls.autoRotate = true;
 // ----------------- Phantom Panel
 const pha_panel = new GUI();
 document.getElementById( 'pantom-cont' ).appendChild( pha_panel.domElement );
-pha_panel.domElement.style = 'position:absolute';
+pha_panel.domElement.style = 'position:absolute;z-index:0';
 
 pha_panel.add( {'rotate': true}, 'rotate' ).onChange(function ( rot ) {
     pha_controls.autoRotate = rot;
@@ -146,7 +146,7 @@ cyl_controls.autoRotate = true;
 // ----------------- Cylinder Panel
 const cyl_panel = new GUI();
 document.getElementById( 'cylinders-cont' ).appendChild( cyl_panel.domElement );
-cyl_panel.domElement.style = 'position:absolute';
+cyl_panel.domElement.style = 'position:absolute;z-index:0';
 
 cyl_panel.add( {'rotate': true}, 'rotate' ).onChange(function ( rot ) {
     cyl_controls.autoRotate = rot;
