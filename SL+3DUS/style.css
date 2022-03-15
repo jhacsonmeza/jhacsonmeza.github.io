@@ -17,6 +17,10 @@ p, a, li {
     color: var(--text-color);
 }
 
+b {
+    font-weight: 700;
+}
+
 a {
     text-decoration: none;
     color: var(--link-color);
@@ -56,10 +60,7 @@ svg {
     
     text-align: center;
     margin-top: 1.2em;
-    /* color: #8a8fa0; */
     color: var(--title-color);
-    /* background-color: #bae9c7; */
-    /* background-color: #cff0f2; */
 }
 
 .authors {
@@ -142,8 +143,8 @@ pre {
 
 figure {
     display: flex;
-	flex-direction: column;
-	align-items: center;
+    flex-direction: column;
+    align-items: center;
     margin: 1.8em auto 1.8em;
 }
 
