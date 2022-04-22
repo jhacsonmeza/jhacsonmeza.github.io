@@ -169,21 +169,23 @@ header {
     border-color: #e5f3fa;
     border-width: 1px;
     border-radius: 100px;
+
     background-color: #ebf8ff;
+    box-shadow: 0 0 #0000,0 0 #0000, 0 1px 2px 0 rgba(0,0,0,0.07);
 
     display: inline-block;
     padding: 2px 10px 1px 10px;
     margin: 0.5em 0 0;
 
-    transition: color .5s, border-color .5s, background-color .5s;
+    transition: box-shadow .5s, transform .5s;
 }
 
 .paper-links a:hover {
     text-decoration: none;
-    color: #00838f;
-    border-color: #00838f;
-    background-color: #f0f9ff;
-    transition: color .5s, border-color .5s, background-color .5s;
+
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.13),0 5px 8px 2px rgba(0,0,0,0.13);
+    transform: translateY(-1px);
+    transition: box-shadow .5s, transform .5s;
 }
 
 
